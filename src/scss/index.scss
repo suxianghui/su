@@ -1,0 +1,33 @@
+@import '_minix.scss';
+@import 'common.scss';
+.box {
+    width: 100%;
+    height: 100%;
+    @include box_flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    height: pxTorem(50px);
+    background: rgb(21, 214, 182);
+    @include box_flex;
+    @include justify(space-around);
+    @include align(center);
+    color: white;
+    .header_input {
+        width: pxTorem(200px);
+        height: pxTorem(30px);
+        background: rgb(10, 161, 129);
+    }
+}
+
+section {
+    flex: 1;
+}
+
+footer {
+    width: 100%;
+    height: pxTorem(50px);
+    background: blue;
+}
