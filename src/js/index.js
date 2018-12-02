@@ -1,12 +1,11 @@
 $(function() {
-
     $.ajax({
         url: '/api',
         dataType: "json",
         success: function(list) {
             if (list.code === 1) {
                 reacData(list.data);
-            }
+            };
         }
     });
 
@@ -22,7 +21,6 @@ $(function() {
             autoplay: true,
             loop: true
         });
-
     };
 
     function reatData(data) {
@@ -33,5 +31,4 @@ $(function() {
                       </dl>`
         }).join('');
     };
-
-})
+});
