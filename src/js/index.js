@@ -30,5 +30,6 @@ $(function() {
                        <dt>${item.val}</dt>
                       </dl>`
         }).join('');
+        console.log(123)
     };
 });
